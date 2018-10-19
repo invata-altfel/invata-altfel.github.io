@@ -1,0 +1,66 @@
+Bac.io
+
+invata-altfel.io votat Teo Ovi Vlad
+
+Lectii.github.io vot Teo Vlad
+
+ProfuOnline.io  vot Teo Ovi
+
+
+
+=================================================================
+Poza, email 
+Ca aici 
+https://www.cosmindumitrache.com/
+
+http://groups.inf.ed.ac.uk/teaching/slipd15-16/
+
+Teo --------- Full Stack Architect; PO
+Vlad -------- BackEnd Dev
+Ovidiu ----- PM
+Andrei ------ Full Stack TBD
+Robert ------ Full stack TBD
+
+
+3 problema
+Toata lumea face meditatii, trebuie sa ai informatii despre profi, nu mereu gasesti profi in zona ta, preturi difera la profi, cunostinte in ritm propriu, last minute preparation
+
+
+
+4. Solution: online platform cu meditatori
+
+value proposition --- sfera connecting people
+“Educatie la indemana tuturor”
+
+
+5. Customer segments
+Studenti/elevi cu bani  --- poate si parinti
+Meditatori fara bani
+
+
+6. 
+Anunturi meditatie online
+
+7. Interactiune online, whiteboard, video, chat, safe money transfer, meditatori verificati (cu ce stim de la pedagogie), access materiale premium, inregistrari la sedinte
+
+
+8. Key metrics
+No. useri, No. meditatori, bani, retentia userilor, timp pe platforma, bani in cont $$
+
+
+9. Cost structure:
+Site hosting,DNS, certificate SSL, marketing, add pe fb/google, youtube, non free services (eg. money transfer, gui stuff)
+
+10. Revenue streams
+Procent din cat castiga meditatorii, premium subscription, promotii (reduceri vara), track special de examen
+
+
+Cum pastram oamenii pe platforma:
+Safe money transfer
+White board with cool stufs
+Materiale premium 
+Inregistrari / note
+Real time scan / upload fisiere / formule usor de scris 
+Feedback / rating  based on user experience
+Licitare pret intre cele doua persoane (grupuri de persoane)
+

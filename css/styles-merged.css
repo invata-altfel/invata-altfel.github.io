@@ -13,6 +13,15 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Daniel Eden
 */
 
+
+.someClassName{
+   width:   100px;
+   height:  100px;
+   background-image: url("img/studiu.jpg");
+}
+
+
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

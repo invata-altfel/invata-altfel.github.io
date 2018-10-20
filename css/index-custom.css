@@ -5,3 +5,8 @@
 	text-align: center;
 	align-content: center;
 }
+
+.member-image {
+	width: 150px;
+	height: 150px;
+}

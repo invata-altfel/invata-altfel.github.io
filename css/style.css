@@ -13,14 +13,6 @@
   font-style: normal;
 }
 
-.someClassName{
-   display: inline-block;
-   width:   100px;
-   height:  100px;
-   background-image: url("img/studiu.jpg");
-}
-
-
 
 html {
   overflow-x: hidden;

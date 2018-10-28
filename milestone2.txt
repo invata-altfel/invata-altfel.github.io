@@ -15,6 +15,23 @@ Ne dorim să explorăm cât mai mult segmentul de clienţi (elevii şi meditator
 
 Describe the process in detail - how you identified your customer segment/s, how you reached them, how you collected information from them (focus groups, face-to-face interviews, questionnaires, online forms/questionnaire, email collection on landing page etc). Include the questions that you asked and all of your findings.
 
+
+Descrierea procesului
+Pentru a valida acest proiect am recurs la o varianta simpla si la indemana: chestionare online. Urmatorul pas ar fi monitorizarea si colectarea datelor de pe landing page (timp petrecut pe pagina, adrese de email, ip-uri etc) folosind google analitycs.	Setul de intrebari sunt disponibile aici [https://goo.gl/forms/QiGsEpivLn99nDT72], iar raspunsurile (view only) aici [https://docs.google.com/spreadsheets/d/1TkRVGM-fkZLRMMVhEdKFItw1FkVPrrIDtOwqc66bCUA/edit#gid=123763924]. 
+Am distribuit acest formular pe un grup pe facebook al unui liceu din Pitesti, cat si in cadrul studentilor (asemanator).
+
+Distributia mai jos avem doua grafice care arata particularitatile oamenilor care au completat formularul: majoritatea studenti si elevi de liceu, o majoritate covarsitoare din acestia recunoscand ca au facut sau fac meditatii. 
+
+TODO INSEREAZA CELE DOUA GRAFICE UNU LANGA ALTU VEZI FOLDERUL IMG  Selection_173.png,  Selection_175.png
+
+Acest lucru ne confirma faptul ca meditatiile sunt de interes si ne putem concentra in aceasta directie (momentan). Meditatiile au fost facute in principal (in ordine) pentru: admitere facultate, examenul de bacalaureat, olimpiade, evaluarea nationala. Graficul este urmatorul cu precizarea ca procentele nu insumeaza 100% pentru ca a fost o intrebare cu raspunsuri multiple.  
+
+TODO BAGA GRAFIC POZA Selection_176.png
+
+
+
+
+
 Aici trebuie detalii.
 
 

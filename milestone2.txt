@@ -1,0 +1,29 @@
+How you identified the problem
+
+Problema este usor de identificat. Astazi, majoritatea elevilor / studentilor fac pe langa activitatea scolara obligatorie si pregatiri suplimentare particulare. Acest lucru necesita un proces ceva mai complex in care sunt implicati atat parintii cat si elevii: cautarea unui meditator care sa fie relativ aproape (in acelasi oras), care sa fie disponibil in intervalul de timp stabilit si care sa se incadreze in bugetul alocat.
+
+
+What you thought is a solution for the problem
+
+Solutia noastra implica mutarea ajutorului educational in online. Acest lucuru se realizeaza printr-o platforma care aduce meditatorii si elevii/studentii mai aproape. Astfel solutiile de meditare cresc (e.g. poti face meditatie cu cineva din alt oras), flexibilitatea este sporita (fara deplasare), iar banii sunt transferati in siguranta, transparent.
+
+
+Your plan for customer discovery (short overview before going into detail)
+
+Ne dorim sa exploram cat mai mult segmentul de clienti (elevii si meditatorii). Ne vom axa in principal pe elevi/studenti ce au nevoie de ajutor, deoarece ei vor fi cei care vor plati serviciul. Ne dorim sa propunem un formular prin care sa intelegem nevoile, mai exact: daca nevoia de meditatie exista, daca este accesibil meditatia "fizica/in persoana", daca ar prefera sa se mute in online si de ce ar face.
+
+
+Describe the process in detail - how you identified your customer segment/s, how you reached them, how you collected information from them (focus groups, face-to-face interviews, questionnaires, online forms/questionnaire, email collection on landing page etc). Include the questions that you asked and all of your findings.
+
+Aici trebuie detalii.
+
+
+Describe how these insights have affected your product (if in any way).
+
+
+
+Do you consider that you are ready to move to the Customer Validation stage (to test selling)? Provide arguments.
+
+Aproape da. Ar mai trebui facute cateva chestionare cu elevi/studenti din zone diferete. Acelasi lucru si pentru potentiali meditatori. 
+Suntem increzatori in acest lucru, pentru ca in urma analizei, persoanele care au raspuns ar incerca o astfel de platforma.
+De asemenea, am identificat cateva atribute pe care platforma ar trebui sa le aiba pentru a fi asa cum elevii studentii isi doresc. Implementarea propunerilor relevante obtinute in urma interogarii ar trebui sa fie important pentru crearea acestui proiect

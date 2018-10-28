@@ -28,19 +28,30 @@ Acest lucru ne confirma faptul ca meditatiile sunt de interes si ne putem concen
 
 TODO BAGA GRAFIC POZA Selection_176.png
 
+Am incercat sa intelegem piata si sa gasim ce probleme apar sunt la meditatiile "clasice". Cei intervievati s-au plans de calitatea proasta a predarii datorata de: superficialitate/ lipsa de profesionalism; meditatorul nu isi da interesu, dificultati in intelegere din cauza modului de predare (Nu explica, nu ajuta elevul sa inteleaga, este plictisitor sau nerabdator). Urmatoarele probleme sunt date de chestiuni logistice (grupuri prea mari de elevi, pret ridicat, programul meditatorului nu este in concordata cu al elevului).
 
 
+In legatura cu problema distantei ("Considerați că aveți acces ușor la meditatori competenți în apropierea dumneavoastră atunci când aveți nevoie de ajutor?"), raspunsurile sunt impartite aproximativ 60% Da, 40%Nu. Acest lucru se datoreaza faptului ca sondajul a fost facut in Pitesti si Bucuresti, orase destul de mari. Ar trebui efectuat studiu similar in orase mici (sau chiar mediu rular).
 
 
-Aici trebuie detalii.
+Esantionul nostru mai arata cateva detalii utile: gradul de satisfactie notat prin note de la 1 la 10 pentru meditatiile date are o valoare medie de 7.4, iar pretul "cinstit" pentru o sedinta este in jurul a 50-60 lei.
+
+Cum era de asteptat pentru noi, profesorul meditator este gasit prin recomandari ale cunoscutilor. Acest lucru ne face sa fim increzator ca putem usura procesul de cautare (fiind o problema semnalata si in formular). TODO BAGA POZA!?.
+
+
+Ultimele intrebari fac referire la platforma noastra. Un lucru interesant este faptul ca cei intervievati ar dori sa foloseasca platforma pentru meditatii de scurta durata (rezultatul scontat fiind fix opus). TODO BAGA POZA!?. Oamenii ce au participat la acest formular sunt deschisi pentru utilizarea unei astfel de platforma si in general la ideea de a muta meditatiile in online: (Pozitiv: 68%, Negativ: 25%, Neutru: 7%). Problema mare ar fi aici ca majoritatea din cei cu negativ considera ca este mai usor de inteles cand iti este explicat face to face
+
+In final am aflat si TODO BAGATI AICI PLS
+
 
 
 Describe how these insights have affected your product (if in any way).
-
+Conform intrebarii 4 ne-am dat seama ca este destul de important sa alegem pe platforma meditatori cat mai compententi. Alegerea acestora se poate realizeaza prin: test de evaluare initial, evaluare/rating dat de user. Faptul ca relatia este online, ofera mai multa flexibilitate, se poate alege oricand alt meditator.
+O sa luam in considerare si optiunea furnizata pana acum: folosirea pentru meditatii de scurta durata.
 
 
 Do you consider that you are ready to move to the Customer Validation stage (to test selling)? Provide arguments.
 
-Aproape da. Ar mai trebui facute cateva chestionare cu elevi/studenti din zone diferete. Acelasi lucru si pentru potentiali meditatori. 
+Aproape da. Ar mai trebui facute cateva chestionare cu elevi/studenti din zone diferete. Acelasi lucru si pentru potentiali meditatori. Cifrele furnizate arata aproape cum ne-am imaginat, desigur fiind nevoie si de mici ajustari. Totusi inainte de a lua aceste decizii  ar trebui facut un studiu un pic mai aplu.
 Suntem increzatori in acest lucru, pentru ca in urma analizei, persoanele care au raspuns ar incerca o astfel de platforma.
 De asemenea, am identificat cateva atribute pe care platforma ar trebui sa le aiba pentru a fi asa cum elevii studentii isi doresc. Implementarea propunerilor relevante obtinute in urma interogarii ar trebui sa fie important pentru crearea acestui proiect

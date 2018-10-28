@@ -24,7 +24,7 @@ Distributia mai jos avem doua grafice care arata particularitatile oamenilor car
 
 TODO INSEREAZA CELE DOUA GRAFICE UNU LANGA ALTU VEZI FOLDERUL IMG  Selection_173.png,  Selection_175.png
 
-Acest lucru ne confirma faptul ca meditatiile sunt de interes si ne putem concentra in aceasta directie (momentan). Meditatiile au fost facute in principal (in ordine) pentru: admitere facultate, examenul de bacalaureat, olimpiade, evaluarea nationala. Graficul este urmatorul cu precizarea ca procentele nu insumeaza 100% pentru ca a fost o intrebare cu raspunsuri multiple.  
+Acest lucru ne confirma faptul ca meditatiile sunt de interes si ne putem concentra in aceasta directie (momentan). Meditatiile au fost facute in principal (in ordine) pentru:  examenul de bacalaureat, admitere facultate, olimpiade, evaluarea nationala. Graficul este urmatorul cu precizarea ca procentele nu insumeaza 100% pentru ca a fost o intrebare cu raspunsuri multiple.  
 
 TODO BAGA GRAFIC POZA Selection_176.png
 

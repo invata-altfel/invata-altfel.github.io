@@ -1,1 +1,7 @@
-lala
+cd in repo
+switch to landing-page branch
+
+run:
+
+
+nohup http-server . -p 80 &

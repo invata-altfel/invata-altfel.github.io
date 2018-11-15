@@ -5,3 +5,6 @@ run:
 
 
 nohup http-server . -p 80 &
+
+
+ http-server --ssl -p 443 --cert /etc/letsencrypt/live/invata-altfel.com/cert.pem --key /etc/letsencrypt/live/invata-altfel.com/privkey.pem

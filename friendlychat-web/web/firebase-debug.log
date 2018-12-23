@@ -1,0 +1,25 @@
+[debug] [2018-12-23T16:15:51.553Z] ----------------------------------------------------------------------
+[debug] [2018-12-23T16:15:51.555Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting
+[debug] [2018-12-23T16:15:51.555Z] CLI Version:   6.2.2
+[debug] [2018-12-23T16:15:51.555Z] Platform:      linux
+[debug] [2018-12-23T16:15:51.555Z] Node Version:  v9.2.1
+[debug] [2018-12-23T16:15:51.555Z] Time:          Sun Dec 23 2018 18:15:51 GMT+0200 (EET)
+[debug] [2018-12-23T16:15:51.555Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-23T16:15:51.561Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-23T16:15:51.561Z] > authorizing via signed-in user
+[debug] [2018-12-23T16:15:51.561Z] [iam] checking project invata-altfel-19f07 for permissions ["firebase.projects.get"]
+[debug] [2018-12-23T16:15:51.562Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/invata-altfel-19f07:testIamPermissions  
+
+[debug] [2018-12-23T16:15:52.654Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-23T16:15:52.655Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/invata-altfel-19f07  
+ 
+[debug] [2018-12-23T16:15:53.599Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/alex/invata-altfel.github.io/friendlychat-web/web'...
+[info] 
+[debug] [2018-12-23T16:15:53.601Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/934657398609/clients/_:getWebAppConfig  
+ 
+[debug] [2018-12-23T16:15:54.309Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./public
+[info] ✔  hosting: Local server: http://localhost:5000

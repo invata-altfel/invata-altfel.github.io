@@ -13,9 +13,21 @@
         }
       }
     },
+    "$uid": {
+        ".read": "$uid === auth.uid || auth.token.email === 'alex.ovidiunitu@gmail.com'",
+        ".write": "$uid === auth.uid",
+        "$messageId": {
+        // The name has to be the real display name.
+        ".validate": "newData.child('name').val() === auth.token.name",
+        "text": {
+          // The text has to be less than 300 char.
+          ".validate": "newData.isString() && newData.val().length < 300"
+          }
+        }
+      },
     "fcmTokens": {
       // User can write their tokens to the database but not read the list of tokens.
-      ".read": false,
+      ".read": true,
       ".write": true
     }
   }

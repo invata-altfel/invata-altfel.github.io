@@ -34,8 +34,21 @@ function initFirebaseAuth() {
   firebase.auth().onAuthStateChanged(authStateObserver);
 }
 
+
+// VERY HACKISH FUNCTION
 // Returns the signed-in user's profile Pic URL.
 function getProfilePicUrl() {
+  // console.log("yolo")
+   // Loads the last 12 messages and listen for new ones.
+  var callback = function(snap) {
+    var data = snap.val();
+    displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
+  };
+
+  var x = firebase.auth().currentUser.uid
+  console.log(x)
+  firebase.database().ref(x).limitToLast(12).on('child_added', callback);
+  firebase.database().ref(x).limitToLast(12).on('child_changed', callback);
   return firebase.auth().currentUser.photoURL || '/images/profile_placeholder.png';
 }
 
@@ -44,27 +57,36 @@ function getUserName() {
   return firebase.auth().currentUser.displayName;
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // Returns true if a user is signed-in.
 function isUserSignedIn() {
+
   return !!firebase.auth().currentUser;
 }
 
 // Loads chat messages history and listens for upcoming ones.
 function loadMessages() {
+  
   // Loads the last 12 messages and listen for new ones.
-  var callback = function(snap) {
-    var data = snap.val();
-    displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
-  };
+  // var callback = function(snap) {
+  //   var data = snap.val();
+  //   displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
+  // };
 
-  firebase.database().ref('/messages/').limitToLast(12).on('child_added', callback);
-  firebase.database().ref('/messages/').limitToLast(12).on('child_changed', callback);
+  // var x = firebase.auth().currentUser.uid
+  // console.log(x)
+  // firebase.database().ref(x).limitToLast(12).on('child_added', callback);
+  // firebase.database().ref(x).limitToLast(12).on('child_changed', callback);
 }
 
 // Saves a new message on the Firebase DB.
 function saveMessage(messageText) {
   // Add a new message entry to the Firebase database.
-  return firebase.database().ref('/messages/').push({
+
+  return firebase.database().ref(firebase.auth().currentUser.uid).push({
     name: getUserName(),
     text: messageText,
     profilePicUrl: getProfilePicUrl()

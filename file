@@ -8,3 +8,18 @@ nohup http-server . -p 80 &
 
 
  http-server --ssl -p 443 --cert /etc/letsencrypt/live/invata-altfel.com/cert.pem --key /etc/letsencrypt/live/invata-altfel.com/privkey.pem
+
+
+
+PENTRU FIRE
+
+testati local cu 
+firebase serve --only hosting
+
+daca vreti sa vb cu cineva va puneti pe web https://console.firebase.google.com/project/invata-altfel-19f07/database/invata-altfel-19f07/rules emailul
+(asa cum am eu)
+
+daca vreti sa vb cu cineva modificati in friendlychat-web/web/public/scripts/main.js acolo unde e comentariul
+// DACA ESTI ADMIN BAGI AICI CODU UID
+
+codul il luati din baza de date de pe net cu copy paste

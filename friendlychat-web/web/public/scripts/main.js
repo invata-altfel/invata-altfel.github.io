@@ -45,8 +45,10 @@ function getProfilePicUrl() {
     displayMessage(snap.key, data.name, data.text, data.profilePicUrl, data.imageUrl);
   };
 
+
   var x = firebase.auth().currentUser.uid
   console.log(x)
+  // x = 'VttEatfZR2XIa1rbYkc6xwg1nsF3'   // DACA ESTI ADMIN BAGI AICI CODU UID
   firebase.database().ref(x).limitToLast(12).on('child_added', callback);
   firebase.database().ref(x).limitToLast(12).on('child_changed', callback);
   return firebase.auth().currentUser.photoURL || '/images/profile_placeholder.png';
@@ -86,7 +88,7 @@ function loadMessages() {
 function saveMessage(messageText) {
   // Add a new message entry to the Firebase database.
 
-  return firebase.database().ref(firebase.auth().currentUser.uid).push({
+  return firebase.database().ref(firebase.auth().currentUser.uid).push({ // DACA ESTI ADMIN BAGI AICI CODU UID
     name: getUserName(),
     text: messageText,
     profilePicUrl: getProfilePicUrl()

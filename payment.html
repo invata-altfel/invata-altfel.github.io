@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Payment</title>
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+
+    <div class="py-5 text-center">
+        <h2>Plată meditaţie</h2>
+    </div>
+
+    <div class="prof-info">
+        <div class="info"><label>Meditator :</label>  <span></span></div>
+        <div class="info"><label>Materie :</label>  <span></span></div>
+        <div class="info"><label>Dată şi oră :</label>  <span></span></div>
+        <div class="info"><label>Durată :</label>  <span></span></div>
+        <div class="info"><label>Preţ :</label>  <span>10 EUR</span></div>
+    </div>
+
+
+
+    <div class="container" align="center">
+        <div id="paypal-button-container"></div>
+
+        <div id="paypal-button"></div>
+    </div>
+
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script>
+        paypal.Button.render({
+            // Configure environment
+            env: 'production',
+            client: {
+                sandbox: 'AW7ZGoxhmxUzorSZLyJ7-vWe0Ew2PE3-yvoGKq9CJpVekA3d9cSH_t6WzjdG7n7wLAb235ljC-qPOBW3',
+                production: 'ARRf-xmVeVJvo2vRfD8OHY9C3CFPWxP-6xelItLQ91zA8FxVeR0S_rl6cqbCIJ8qToazVU9PwmWk8h-u'
+            },
+            // Customize button (optional)
+            locale: 'en_US',
+            style: {
+                size: 'large',
+                color: 'gold',
+                shape: 'pill',
+                label: 'pay',
+            },
+
+        // Enable Pay Now checkout flow (optional)
+        commit: true,
+
+        // Set up a payment
+        payment: function(data, actions) {
+            return actions.payment.create({
+                transactions: [{
+                    amount: {
+                        total: '10',
+                        currency: 'EUR',
+                    },
+                    description: 'Plată meditaţie.',
+                    item_list: {
+                        items: [
+                        {
+                            name: 'Meditaţie',
+                            description: 'Meditaţie Învaţă altfel.',
+                            quantity: '1',
+                            price: '10',
+                            currency: 'EUR'
+                        }]
+                    }
+                }]
+            });
+        },
+        // Execute the payment
+        onAuthorize: function(data, actions) {
+            return actions.payment.execute().then(function() {
+        // Show a confirmation message to the buyer
+        window.alert('Plata a fost înregistrată.');
+    });
+        }
+    }, '#paypal-button');
+    </script>
+</body>
+</html>

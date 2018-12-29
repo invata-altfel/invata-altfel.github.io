@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/styles-merged.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/index-custom.css">
+
+  <style>
+    .gridContainer {
+      text-align: left;
+      padding-top: 40px;
+    }
+
+    .Materie {
+       display: inline-block;
+    }
+
+    #searchInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 2px solid #ddd;
+      margin: 0 auto;
+      margin-bottom: 12px;
+    }
+
+    #offersTable {
+      border-collapse: collapse;
+      width: 50%;
+      border: 1px solid #000;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+
+    #offersTable th, #offersTable td {
+      padding: 12px;
+    }
+
+    #offersTable tr {
+      border-bottom: 1px solid #000;
+      border-top: 1px solid #000;
+    }
+
+    #offersTable tr.header, #offersTable tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    #offersTable tr td {
+      border-right: 1px solid black;
+      color: black
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default probootstrap-navbar ">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html" title="Învață altfel">Învață altfel</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="probootstrap-hero" style="background-image: url(img/multe_carti.jpeg);"data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row intro-text">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h2 class="mb30 text-white probootstrap-heading">Meditaţii</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="probootstrap-section probootstrap-bg-light" id="grid">
+    <div class="container">
+      <div class="row intro-text">
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <input type="text" id="searchInput" onkeyup="search()" placeholder="Caută materie" title="Căutare materie">
+        </div>
+      </div>
+    </div>
+
+    <div class="gridContainer">
+      <table id="offersTable">
+        <tr>
+          <td>
+            <div class="col-md-2">
+              <img src="img/ovi-min.png" class="member-image probootstrap-shadow">
+            </div>
+            <div class="col-md-10">
+              <div class="info">
+                <ul>
+                  <li>Nume: Niţu Ovidiu</li>
+                  <li>Materie: <div class="Materie">Matematică</div></li>
+                  <li>Durată: 2 ore</li>
+                  <li>Preţ: 10 euro</li>
+                  <li>Descriere:</li>
+                </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="col-md-2">
+              <img src="img/vlad-min.jpg" class="member-image probootstrap-shadow">
+            </div>
+            <div class="col-md-10">
+              <div class="info">
+                <ul>
+                  <li>Nume: Vlad Zamfir</li>
+                  <li>Materie: <div class="Materie">Informatică</div></li>
+                  <li>Durată: 2 ore</li>
+                  <li>Preţ: 10 euro</li>
+                  <li>Descriere:</li>
+                </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="col-md-2">
+              <img src="img/teo-min.jpg" class="member-image probootstrap-shadow">
+            </div>
+            <div class="col-md-10">
+              <div class="info">
+                <ul>
+                  <li>Nume: Teodor Vasilache</li>
+                  <li>Materie: <div class="Materie">Informatică</div></li>
+                  <li>Durată: 1.5 ore</li>
+                  <li>Preţ: 10 euro</li>
+                  <li>Descriere:</li>
+                </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="col-md-2">
+              <img src="img/andrei-min.png" class="member-image probootstrap-shadow">
+            </div>
+            <div class="col-md-10">
+              <div class="info">
+                <ul>
+                  <li>Nume: Andrei Stancu</li>
+                  <li>Materie: <div class="Materie">Engleză</div></li>
+                  <li>Durată: 2 ore</li>
+                  <li>Preţ: 10 euro</li>
+                  <li>Descriere:</li>
+                </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="col-md-2">
+              <img src="img/robert-min.png" class="member-image probootstrap-shadow">
+            </div>
+            <div class="col-md-10">
+              <div class="info">
+                <ul>
+                  <li>Nume: Robert Crişan</li>
+                  <li>Materie: <div class="Materie">Matematică</div></li>
+                  <li>Durată: 1.5 ore</li>
+                  <li>Preţ: 10 euro</li>
+                  <li>Descriere:</li>
+                </ul>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+
+  <script>
+    function search() {
+      var input, filter, table, tds, td, i, txtValue, materie;
+      input = document.getElementById("searchInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("offersTable");
+      tds = table.getElementsByTagName("td");
+      for (i = 0; i < tds.length; i++) {
+        td = tds[i];
+        if (td) {
+          materie = td.getElementsByClassName("Materie");
+          if(materie[0]) {
+            txtValue = materie[0].textContent || materie[0].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tds[i].style.display = "";
+          } else {
+            tds[i].style.display = "none";
+          }
+          }
+          
+        }       
+      }
+    }
+  </script>
+
+</body>
+</html>

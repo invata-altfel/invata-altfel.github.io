@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129155961-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129155961-1');
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-        <meta name="description" content="gaseste Meditaţii online. Vorbeste cu meditatori online" />
-        <meta name="author" content="Invata-altfel.com"/>
-        <meta name='robots' content='index,follow,noodp'/>
+  <meta name="description" content="gaseste Meditaţii online. Vorbeste cu meditatori online" />
+  <meta name="author" content="Invata-altfel.com"/>
+  <meta name='robots' content='index,follow,noodp'/>
 
   <link rel="stylesheet" href="css/styles-merged.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -24,7 +32,7 @@
     }
 
     #searchInput {
-      background-image: url('/css/searchicon.png');
+      background-image: url(img/searchIcon.png);
       background-position: 10px 10px;
       background-repeat: no-repeat;
       width: 100%;
@@ -61,6 +69,61 @@
       color: black
     }
   </style>
+
+  <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+  <script>
+    function paypalButton(buton, pret, descriere) {
+      paypal.Button.render({
+          // Configure environment
+          env: 'production',
+          client: {
+            sandbox: 'AW7ZGoxhmxUzorSZLyJ7-vWe0Ew2PE3-yvoGKq9CJpVekA3d9cSH_t6WzjdG7n7wLAb235ljC-qPOBW3',
+            production: 'ARRf-xmVeVJvo2vRfD8OHY9C3CFPWxP-6xelItLQ91zA8FxVeR0S_rl6cqbCIJ8qToazVU9PwmWk8h-u'
+          },
+          // Customize button (optional)
+          locale: 'en_US',
+          style: {
+            size: 'small',
+            color: 'gold',
+            shape: 'pill',
+            label: 'pay',
+          },
+
+      // Enable Pay Now checkout flow (optional)
+      commit: true,
+
+      // Set up a payment
+      payment: function(data, actions) {
+        return actions.payment.create({
+          transactions: [{
+            amount: {
+              total: pret,
+              currency: 'EUR',
+            },
+            description: 'Plată meditaţie. ' + descriere,
+            item_list: {
+              items: [
+              {
+                name: 'Meditaţie',
+                description: 'Meditaţie Învaţă altfel.',
+                quantity: '1',
+                price: pret,
+                currency: 'EUR'
+              }]
+            }
+          }]
+        });
+      },
+      // Execute the payment
+      onAuthorize: function(data, actions) {
+        return actions.payment.execute().then(function() {
+      // Show a confirmation message to the buyer
+      window.alert('Plata a fost înregistrată.');
+    });
+      }
+    }, buton);
+    }
+  </script>
 </head>
 
 <body>
@@ -75,7 +138,19 @@
         </button>
         <a class="navbar-brand" href="index.html" title="Învață altfel">Învață altfel</a>
       </div>
+      <div id="navbar-collapse" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#" data-nav-section="meditatii">Meditaţii</a></li>
+          <!-- <li><a href="#" data-nav-section="team">ECHIPA</a></li> -->
+          <li><a href="#" data-nav-section="register">ÎNREGISTRARE MEDITATOR</a></li>
+          <!-- <li><a href="#" data-nav-section="metricsAndRevenue">ALTE DETALII</a></li> -->
+          <!-- <li><a href="#" data-nav-section="m2validation">M2-VALIDARE</a></li> -->
+          <!-- <li><a href="#" data-nav-section="pricing">TARIFARE</a></li> -->
+          <!-- <li><a href="#" data-nav-section="oferta">OFERTA</a></li> -->
+        </ul>
+      </div>
     </div>
+
   </nav>
 
   <section class="probootstrap-hero" style="background-image: url(img/multe_carti.jpeg);"data-stellar-background-ratio="0.5">
@@ -88,7 +163,7 @@
     </div>
   </section>
               
-  <section class="probootstrap-section probootstrap-bg-light" id="grid">
+  <section class="probootstrap-section probootstrap-bg-light" data-section="meditatii" id="grid">
     
     <div class="container">
       <div class="row intro-text">
@@ -100,7 +175,7 @@
 
     <div class="gridContainer">
 
- <h2 class="col-md-8 col-md-offset-2 text-center"> Da click pe avatarul meditatorului si vorbeste direct cu acesta prin intermediul platformei noastre!</h2>
+ <h2 class="col-md-8 col-md-offset-2 text-center"> Dă click pe avatarul meditatorului şi vorbeşte direct cu acesta prin intermediul platformei noastre!</h2>
       <table id="offersTable">
         <tr>
           <td>
@@ -109,7 +184,7 @@
               <img src="img/av1.png" class="member-image probootstrap-shadow">
               </a>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-7">
               <div class="info">
                 <ul>
                   <li>Nume: Raluca Stoica</li>
@@ -120,6 +195,11 @@
                 </ul>
               </div>
             </div>
+            <div class="col-md-3">
+              <p>Plăteşte meditaţia:</p>
+              <div id="paypal-button1"></div>
+              <script>paypalButton("#paypal-button1", "10", "Materie: Matematică. Nume: Raluca Stoica")</script>
+            </div>
           </td>
         </tr>
         <tr>
@@ -130,16 +210,21 @@
               <img src="img/av2.png" class="member-image probootstrap-shadow">
               </a>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-7">
               <div class="info">
                 <ul>
                   <li>Nume: Stan Cardei</li>
                   <li>Materie: <div class="Materie">Informatică</div></li>
                   <li>Durată: 2 ore</li>
-                  <li>Preţ: 10 euro</li>
+                  <li>Preţ: 8 euro</li>
                   <li>Descriere: ofer meditatii matematica orice nivel (clasele 5-12) Evaluare Nationala, Bacalaureat, Admitere Facultate </li>
                 </ul>
               </div>
+            </div>
+            <div class="col-md-3">
+              <p>Plăteşte meditaţia:</p>
+              <div id="paypal-button2"></div>
+              <script>paypalButton("#paypal-button2", "8", "Materie: Informatică. Nume: Stan Cardei")</script>
             </div>
           </td>
         </tr>
@@ -150,16 +235,21 @@
               <img src="img/av3.png" class="member-image probootstrap-shadow">
               </a>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-7">
               <div class="info">
                 <ul>
                   <li>Nume: Adela Ripnu</li>
                   <li>Materie: <div class="Materie">Informatică</div></li>
                   <li>Durată: 1.5 ore</li>
-                  <li>Preţ: 10 euro</li>
+                  <li>Preţ: 9 euro</li>
                   <li>Descriere: Ofer meditații în principal elevilor de liceu atât pentru înțelegerea materiei cât și pentru pregătirea de bacalaureatLimbaj de programare C++ </li>
                 </ul>
               </div>
+            </div>
+            <div class="col-md-3">
+              <p>Plăteşte meditaţia:</p>
+              <div id="paypal-button3"></div>
+              <script>paypalButton("#paypal-button3", "9", "Materie: Informatică. Nume: Adela Ripnu")</script>
             </div>
           </td>
         </tr>
@@ -170,7 +260,7 @@
               <img src="img/av4.png" class="member-image probootstrap-shadow">
               </a>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-7">
               <div class="info">
                 <ul>
                   <li>Nume: Natalia Covaci</li>
@@ -181,6 +271,11 @@
                 </ul>
               </div>
             </div>
+            <div class="col-md-3">
+              <p>Plăteşte meditaţia:</p>
+              <div id="paypal-button4"></div>
+              <script>paypalButton("#paypal-button4", "10", "Materie: Engleză. Nume: Natalia Covaci")</script>
+            </div>
           </td>
         </tr>
         <tr>
@@ -190,7 +285,7 @@
               <img src="img/av2.png" class="member-image probootstrap-shadow">
               </a>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-7">
               <div class="info">
                 <ul>
                   <li>Nume: Luminita Minea</li>
@@ -201,12 +296,32 @@
                 </ul>
               </div>
             </div>
+            <div class="col-md-3">
+              <p>Plăteşte meditaţia:</p>
+              <div id="paypal-button5"></div>
+              <script>paypalButton("#paypal-button5", "10", "Materie: Matematică. Nume: Luminita Minea")</script>
+            </div>
           </td>
         </tr>
       </table>
     </div>
   </section>
 
+  <!-- Sectiune inregistrare meditator -->
+  <section class="probootstrap-section" id="register" data-section="register">
+    <div class="container">
+      <div class="row text-center mb100">
+        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
+          <h2 class="mb30 text-black probootstrap-heading">Înregistrare meditator</h2>
+          <p><font size="4">Pentru a deveni meditator "Învaţă altfel" şi a putea posta anunţuri de meditaţie, trebuie să treceţi mai întâi prin procesul de înregistrare şi verificare.</font></p>
+          <p><font size="4">Completaţi formularul de înregistrare, accesând butonul de mai jos. Echipa noastră va verifica răspunsul dumneavoastră şi va reveni cu detalii în cel mai scurt timp.</font></p>
+          <div class="probootstrap-subheading center">
+            <p><a href="https://goo.gl/forms/steSeAfw9cL7sayd2" target="_blank" role="button" class="btn btn-primary smoothscroll">Înregistrează-te</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script>
     function search() {
@@ -232,6 +347,8 @@
       }
     }
   </script>
-
+  <script src="js/scripts.min.js"></script>
+  <script src="js/alerts.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>

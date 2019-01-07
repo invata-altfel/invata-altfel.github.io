@@ -830,49 +830,65 @@
        <div class="row">
 
 
-        <h3 class="text-primary probootstrap-heading-2">Scurta Descriere</h3>
-        <p>MVP-ul facut de noi se afla in acelasi loc cu landing page-ul nostru <a href="http://invata-altfel.com"> https://invata-altfel.com </a> </br>
+        <h3 class="text-primary probootstrap-heading-2">Scurtă Descriere</h3>
+        <p>MVP-ul făcut de noi se află în același loc cu landing page-ul nostru <a href="http://invata-altfel.com"> https://invata-altfel.com </a> </br>
           
-          Flow-ul este urmatorul: utilizatorul apasa butonul: Incepe acum! </br></br></br>
+          Flow-ul este următorul: utilizatorul apasă butonul: Începe acum! </br></br></br>
 
           <img src="img/incepe.png" class="img-responsive probootstrap-shadow"></span> </br></br></br>
 
-          Userul este redirectionat catre o alta pagina unde poate sa isi gaseasca meditatorul la materia dorita:</br></br></br>
-          <img src="img/meditatori.png" class="img-responsive probootstrap-shadow"></span> </br>  
-          Apoi, este redirectionat intr-un chat propriu unde poate vorbii direct cu meditatorul (trebuie intai sa isi faca un cont folosind contul Google).</br></br></br>
+          Userul este redirecționat către o altă pagină unde poate să își găsească meditatorul la materia dorită:</br></br></br>
+          <img src="img/meditatori.png" class="img-responsive probootstrap-shadow"></span></br>  
+          Apoi, este redirecționat într-un chat propriu unde poate vorbi direct cu meditatorul (trebuie intâi să se înregistreze folosind contul Google).</br></br></br>
 
           <img src="img/chat.png" class="img-responsive probootstrap-shadow"></span> </br></br></br>
-          Plata se poate face direct din pagina anterioara folosind paypal (linkul este in dreptul fiecarui meditator).
+          Plata se poate face direct din pagina anterioară folosind paypal (linkul este în dreptul fiecărui meditator).
 
-          Implementarea a fost facuta folosind firebase pentru chat (realtime database-ul oferit de ei) + javascript.</br>
-          Restul a fost facut din cod HTML+CSS.</br>
-          Plata este facuta prin intermediul Paypal.</br>
-          Site-ul este gazduit pe o masina gratis de pe azure (folosind contul de student).</br>
-          Numele de domeniu a fost cumparat (circa 12$) de pe <a href="www.namecheap.com" > www.namecheap.com </a>. Din pacate numele de domeniu (.ro) nu era disponibil.</br>
-          Certificatul SSL a fost gratis de pe <a href="https://letsencrypt.org/"> https://letsencrypt.org/ </a>.</br>
+          Implementarea a fost facută folosind Firebase pentru chat (realtime database-ul oferit de ei) + javascript.</br>
+          Restul a fost făcut din cod HTML+CSS.</br>
+          Plata este realizată prin intermediul Paypal.</br>
+          Site-ul este găzduit pe o mașină gratis de pe Microsoft Azure (folosind contul de student).</br>
+          Numele de domeniu a fost cumpărat (circa 12$) de pe <a href="www.namecheap.com" > www.namecheap.com </a>. Din păcate numele de domeniu (.ro) nu era disponibil.</br>
+          Certificatul SSL a fost luat gratuit de pe <a href="https://letsencrypt.org/"> https://letsencrypt.org/ </a>.</br>
 
 
-        <h3 class="text-primary probootstrap-heading-2">Motivatie</h3>
-          Ne-am dorit sa avem cateva elemente baza care sa ne ofere cat mai mult feedback in dezvoltarea ulterioara.
-          In functie de tipul de user am implementat urmatoarele elemente:
+        <h3 class="text-primary probootstrap-heading-2">Motivație</h3>
+          Ne-am dorit să avem câteva elemente de bază care să ne ofere cât mai mult feedback în dezvoltarea ulterioară.
+          Astfel, pe baza etapelor anterioare de validare am implementat următoarele elemente, diferențiate în funcție de tipul de user:
           <h3 class="text-primary probootstrap-heading-2">Elevi</h3>
           <ul class="probootstrap-list">
-            <li class="probootstrap-check">Pot alege un meditator din lista pusa la dispozitie de noi</li>
-            <li class="probootstrap-check">Negogierea detalilor (suma de bani, durata ședinței, etc.) se face prin intermediul chatului (se pot transfera si fisiere)</li>
-            <li class="probootstrap-check">Plata online</li>
+            <li class="probootstrap-check"><strong>Pot alege un meditator din lista pusă la dispoziție</strong>. <p>Deocamdată am adăugat un prim filtru de căutare în funcție de materie (prin intermediul search bar-ului), urmând a dezvolta posibilitățile de căutare, filtrare și sortare ulterior. Acest feature are la bază necesitățile userilor (descoperite prin validare) de simplitate în utilizare și ușurință în căutarea și filtrarea meditatorilor.
+            <br/>
+              De asemenea, fiecare anunț poate conține informații detaliate menite să ajute elevul în luarea unei decizii.
+              <br/>
+               În continuare ne propunem să adăugăm și optiune de rating + review pentru meditatori, pentru menținerea calității ridicate a serviciului (una din cerințele principale ale potențialilor useri).
+            </p> </li>
+            <li class="probootstrap-check"><strong>Dispun de comunicare de tip chat cu meditatorii</strong>. <p>Prin intermediul acesteia se poate ajunge în mod simplu și rapid la o înțelegere în privința detalilor meditației (suma de bani, durata ședinței, etc.). Se pot transfera și fisiere.
+              <br/>
+                Acest feature aduce simplitate în utilizare, responsivitate și interactivitate.
+              </p></li>
+            <li class="probootstrap-check"><strong>Plata online</strong><p>
+                Transferul nu se va efectua direct meditatorului ci va trece prin contul afiliat platformei, unde va fi păstrat pentru un interval prestabilit de timp. Apoi tranzacția va fi finalizată prin plata către meditator sau prin restituirea sumei elevului (în cazul unei încercări de scam). Această procedură reduce la minim riscul de scam, elevul având timp să raporteze o potențială problemă, ce va fi verificată și mediată de către echipa "Învață altfel". Astfel, orice plată poate fi făcută în sigurantă prin intermediul platformei.
+              </p></li>
+              
           </ul>
-          Ce mai trebuie implemtat: posibilitatea de a posta un anunt (acum acest lucru se poate face sub forma unui request completand formularul pus la dispozitie in paginile site-ului), interacțiune online prin video (sau sunet), access la materiale premium, whiteboard.
+          <p>Din descoperirile noastre, aceste calități prezentate, împreună cu design-ul atractiv, reprezintă principalii factori ce ar motiva elevi și studenți să încerce platforma educațională online, în locul meditațiilor clasice față-în-față.<br/> 
+          Restul caracteristicilor principale identificate în etapele precedente de validare influențează în special retenția și nu aducerea de useri noi, așa ca nu ne-am axat pe acelea.
+
+          <p><strong>Ce mai trebuie implemtat:</strong> posibilitatea de a posta un anunț (acum acest lucru se poate face sub forma unui request completând formularul pus la dispozitie în paginile site-ului), interacțiune online prin video (sau sunet), access la materiale premium, whiteboard interactiv.</p>
 
           <h3 class="text-primary probootstrap-heading-2">Meditatorii</h3>
           <ul class="probootstrap-list">
-            <li class="probootstrap-check">Trebuie sa se inscrie pe site prin intermediul formularului (care sa deja gaseste pe site: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOqIqJyX-d62PfvMGYHtWwHL0ryd2nCIEK_cJ67XEAfnEGjQ/viewform"> link </a>)</li>
-            <li class="probootstrap-check">Pot vorbi cu elevii prin intermediul chatului</li>
-            <li class="probootstrap-check">Banii sunt virati la final de saptamana in contul personal</li>
+            <li class="probootstrap-check"><strong>Trebuie să se înscrie pe site prin intermediul formularului (care sa deja gaseste pe site: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOqIqJyX-d62PfvMGYHtWwHL0ryd2nCIEK_cJ67XEAfnEGjQ/viewform"> link </a>)</strong>
+            <p>
+            Înregistrarea prin formular este o primă metodă de verificare a meditatorilor, ceea ce asigură calitatea ridicată a platformei. Potențialii meditatori trebuie sa furnizeze informații detaliate, ce sunt verificate ulterior de echipa "Învață altfel". Echipa decide dacă respondentul are calificarea necesară pentru a fi meditator pe platformă.
+            </p></li>
+            <li class="probootstrap-check"><strong>Pot vorbi cu elevii prin intermediul chatului</strong></li>
+            <li class="probootstrap-check"><strong>Banii sunt virați la final de săptămână în contul personal</strong></li>
           </ul>
-            Ce mai trebuie implemtat: posibilitatea de a selecta un anunt postat de un elev, interacțiune online prin video (sau sunet), creearea unui loc separat de ceilalti meditatori unde acesta sa isi incarce materiale pe site,  whiteboard.
+            <p>Ce mai trebuie implementat: posibilitatea de a selecta un anunț postat de un elev, interacțiune online prin video (sau sunet), creearea unui loc separat de ceilalți meditatori unde acesta sa își încarce materiale pe site, whiteboard.</p>
 
-            Consideram ca aceasta implemtare este suficienta momentan pentru a obtine cateva informatii despre ce isi doresc utilizatorul cu adevarat.
-            Cifrele date din trafic si formularele completate ne pot da un indiciu despre ce trebuie sa facem in continuare. 
+            <p>Considerăm că această implementare este suficientă momentan pentru a confirma că există potențiali utilizatori interesați de a folosi platforma. Cifrele date din trafic si formularele completate ne pot da un indiciu despre ce trebuie să facem în continuare. </p>
 
   </section>
 
@@ -888,44 +904,41 @@
        <div class="row">
 
 
-        <p>Harta traficului in Romania este (urmatorul conform google analytics): </br></br></br>
+        <p>Harta traficului în Romania este următoarea (conform google analytics): </br></br></br>
           
           <img src="img/romania.png" align="center"></br></br></br>
-          Numarul de useri pe site-ul nostru este de ordinul sutelor: (circa 200).
-          Din pacate, publicarea acestui site a fost facuta intr-o perioada cam nefericita (vacanta de iarna), cand majoritatea elevilor si parintilor nu au avut ca principal scop gasirea de meditatori. </br>
-          Ne asteptam insa ca la inceputul acestui an sa existe cat mai multi useri pe platforma, deoacerece vin perioade importante din viata de student sau elev: sesiunea, simulari pentru bac sau evaluarea nationala </br>
+          Numărul de useri/vizitatori pe site-ul nostru este de ordinul sutelor: (circa 200).
+          Din păcate, publicarea acestui site a fost făcuta într-o perioada cam nefericită (vacanța de iarna), când majoritatea elevilor și părinților nu au avut ca principal scop găsirea de meditatori. </br>
+          Ne așteptăm însă ca la începutul acestui an să existe cât mai mulți useri pe platformă, deoarece vin perioade importante din viața de student sau elev: sesiunea, simulări pentru bac sau evaluarea națională </br>
 
 
         <h3 class="text-primary probootstrap-heading-2">Promovare</h3>
-          Am trimis site-ul personalor care ne-au ajutat si in etapele anterioare. 
-          De asemenea, ne-a facut o pagina de facebook unde am facut si o mica promovare:
+          Am trimis site-ul personalor care ne-au ajutat și în etapele anterioare. 
+          De asemenea, ne-am făcut o pagina de facebook unde am făcut și o mică promovare de tip ad:
 
           <img src="img/reclama.jpg" align="center"  height="400" width="352" ></br></br></br>
 
-          Mai mult,  am intrebat si comunitatea  <a href="https://www.reddit.com/r/robyte/comments/aclvmk/ideei_si_pareri_despre_acest_startup/" >reddit</a> despre aceasta idee / site.
+          Mai mult, am întrebat și comunitatea <a href="https://www.reddit.com/r/robyte/comments/aclvmk/ideei_si_pareri_despre_acest_startup/" >reddit</a> despre aceasta idee / site.
 
 
-        <h3 class="text-primary probootstrap-heading-2">Vanzare</h3>
-        Asa cum am precizat mai sus, nu am avut parte de un success in privinta vanzarilor. Am primit totusi niste sugestii de la persoane pentru rezolvarea anumitor exercitii. Din pacate, aceste exercitii faceau parte din teme, iar acest lucru ne-a facut sa nu mai continuam, deoarece ni s-a parut imoral si necinstit. </br>
+        <h3 class="text-primary probootstrap-heading-2">Vânzare</h3>
+        Așa cum am precizat mai sus, nu am avut parte de un success în privința vânzărilor. Am primit totuși niște solicitări pentru rezolvarea anumitor exerciții. Din păcate, acestea făceau parte din teme, iar acest lucru ne-a facut să nu mai continuăm, deoarece ni s-a părut imoral si necinstit. </br>
         </br>
-        Cel mai importante probleme preluate de la personalele contactate sunt explicate si prezentate mai jos: </br>
+        Cele mai importante probleme preluate de la personalele contactate sunt explicate si prezentate mai jos: </br>
         <div class="col-md-50">
-              <li class="probootstrap-check"> Putini meditatori comparativ cu numarul de materii din scoli/facultati - (am implementat doar ceva minimal intr-un timp scurt cu o promovare relativ mica)</li>
+              <li class="probootstrap-check"> Puțini meditatori comparativ cu numărul de materii din școli/facultăți - (am implementat doar ceva minimal într-un timp scurt cu o promovare relativ mică)</li>
               <li class="probootstrap-check"> Site-ul nu poate fi accessat daca este deschis in facebook messenger - (Known issue: browserul integrat in Facebook considera certificatul de pe site-ul nostru invalid; Problema se poate rezolva prin deshiderea directa in browser)</li>
-              <li class="probootstrap-check"> Comunicarea cu meditatorul este foarte minimala - (Asta face parte din MVP - o sa exitindem cu mai multe functionalitati)</li>
-              <li class="probootstrap-check"> Lipsa acordarii unui review meditatorului (Meditatorii sunt verificati, oricum acest feature trebuie implementat)</li>
-              <li class="probootstrap-check"> Incarcare greoaie a site-ului (Probably solved: compresarea imaginilor de pe site; Urmatorul pas ar fi optimizarea partii de server, momentant existand o masina virtuala cu resurse foarte mici (1GB RAM, 1CPU))</li>
+              <li class="probootstrap-check"> Comunicarea cu meditatorul este foarte minimala - (Asta face parte din MVP - o sa extindem cu mai multe funcționalități)</li>
+              <li class="probootstrap-check"> Lipsa acordării unui review meditatorului (Meditatorii sunt verificați, oricum acest feature trebuie implementat)</li>
+              <li class="probootstrap-check"> Încărcare greoaie a site-ului (Probably solved: compresarea imaginilor de pe site; Următorul pas ar fi upgrade-ul părții de server, momentant existând o mașină virtuală cu resurse foarte mici (1GB RAM, 1CPU))</li>
             </div>
 
             </br>
-        Cel mai importante parti pozitive preluate de la personalele contactate: </br>
+        Cele mai importante părti pozitive preluate de la personalele contactate: </br>
          <ul class="probootstrap-list">
             <li class="probootstrap-check">Plata online este o idee foarte buna!</li>
-            <li class="probootstrap-check">Discutia se face mai rapid direct pe platforma (fara a da telefon, fara a scrie mailuri) </li>
+            <li class="probootstrap-check">Discuția se face mai rapid direct pe platforma (fără a da telefon, fără a scrie mailuri) </li>
           </ul>
-
-
-
   </section>
 
 
